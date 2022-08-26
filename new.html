@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <title>网址导航 - 日夜交替</title>
+<script id="compatiable-checker">
+  // 兼容性检查
+  function detectIE() {
+    var n = window.navigator.userAgent, e = n.indexOf("MSIE ");
+    if (e > 0) {
+      return parseInt(n.substring(e + 5, n.indexOf(".", e)), 10);
+    }
+    if (n.indexOf("Trident/") > 0) {
+      var r = n.indexOf("rv:");
+      return parseInt(n.substring(r + 3, n.indexOf(".", r)), 10);
+    }
+    var i = n.indexOf("Edge/");
+    return i > 0 && parseInt(n.substring(i + 5, n.indexOf(".", i)), 10);
+  };
+  detectIE() && (alert('当前站点不支持IE浏览器或您开启了兼容模式，请使用其他浏览器访问或关闭兼容模式。'), (location.href = 'https://www.baidu.com'));
+</script>
+
+<script id="theme-config-getter" type="text/javascript">
+  // 获取主题配置
+  var ThemeConfig = {};
+  var handleValue = function(value) {
+      value = value.replace(/</g,"&lt;").replace(/>/g, "&gt;");
+      if(/^(true|false)$/.test(value)) {
+        value = JSON.parse(value);
+      }
+      if(/^\d+$/.test(value)) {
+        value = Number(value);
+      }
+      return value;
+  }
+      ThemeConfig['enable_like'] = handleValue('true');
+      ThemeConfig['live2d_showF12Status'] = handleValue('false');
+      ThemeConfig['lazyload_avatar'] = handleValue('/source/svg/spinner-preloader.svg');
+      ThemeConfig['tags_type'] = handleValue('card');
+      ThemeConfig['live2d_showWelcomeMessage'] = handleValue('true');
+      ThemeConfig['banner_amount_limit'] = handleValue('5');
+      ThemeConfig['enable_code_line_number'] = handleValue('false');
+      ThemeConfig['live2d_canCloseLive2d'] = handleValue('true');
+      ThemeConfig['links_empty_text'] = handleValue('暂无友链');
+      ThemeConfig['live2d_takagiToolLine'] = handleValue('20px');
+      ThemeConfig['comment_email_poptext'] = handleValue('你将收到回复通知');
+      ThemeConfig['enable_post_ads_bottom'] = handleValue('false');
+      ThemeConfig['enable_tags_aside'] = handleValue('true');
+      ThemeConfig['enable_banner_handle'] = handleValue('true');
+      ThemeConfig['enable_relate_post'] = handleValue('true');
+      ThemeConfig['comment_aword'] = handleValue('你是我一生只会遇见一次的惊喜 ...');
+      ThemeConfig['comment_empty_text'] = handleValue('你确定不想说点什么？');
+      ThemeConfig['qq'] = handleValue('2972876172');
+      ThemeConfig['loading_bar_color'] = handleValue('');
+      ThemeConfig['light_time_scope'] = handleValue('5:00~19:00');
+      ThemeConfig['live2d_tipsMessage'] = handleValue('');
+      ThemeConfig['backdrop'] = handleValue('off');
+      ThemeConfig['comment_loading_style'] = handleValue('default');
+      ThemeConfig['enable_newest_post'] = handleValue('true');
+      ThemeConfig['live2d_modelTexturesRandMode'] = handleValue('rand');
+      ThemeConfig['enable_comment_autoload'] = handleValue('true');
+      ThemeConfig['live2d_showToolMenu'] = handleValue('true');
+      ThemeConfig['enable_katex'] = handleValue('false');
+      ThemeConfig['leaving_empty_text'] = handleValue('暂无留言，期待第一个脚印。');
+      ThemeConfig['live2d_takagiToolTop'] = handleValue('0px');
+      ThemeConfig['enable_aside_ads'] = handleValue('false');
+      ThemeConfig['enable_hot_category'] = handleValue('true');
+      ThemeConfig['enable_glass_blur'] = handleValue('true');
+      ThemeConfig['live2d_takagiMinWidth'] = handleValue('768px');
+      ThemeConfig['enable_code_title'] = handleValue('true');
+      ThemeConfig['rip_mode'] = handleValue('false');
+      ThemeConfig['enable_banner_loop'] = handleValue('true');
+      ThemeConfig['banner_direction'] = handleValue('horizontal');
+      ThemeConfig['img_max_width'] = handleValue('100%');
+      ThemeConfig['avatar_frame'] = handleValue('bat');
+      ThemeConfig['enable_toc'] = handleValue('false');
+      ThemeConfig['long_code_height'] = handleValue('800');
+      ThemeConfig['aside_position'] = handleValue('right');
+      ThemeConfig['tags_title'] = handleValue('全部标签');
+      ThemeConfig['passage_rights_content'] = handleValue('<fieldset  style=\" border: 1.5px dashed #008cff; padding: 8px; border-radius: 5px; line-height: 2em;font-weight: 700;color: var(--key-color);background-color: var(--body-bg-color);\">\n      <legend align=\"center\" style=\" margin-bottom: -2px;width: 30%;text-align: center; background-color: #008cff; border-radius: 999px; background-image: linear-gradient(to right, #FFCC99, #FF99CC);border: 1.5px dashed #008cff;\" >\n        版权声明\n      <\/legend>\n      <span style=\"color: #3333ff\"><span style=\"color: #09ace2; font-size: 18px\"><strong><\/strong><\/span><\/span>\n<span class=\"btn-info btn-xs\"><font color=\"red\"size=\"4\">未经允许，禁止转载!<\/size><\/font><\/span><br>\n            <span class=\"btn-info btn-xs\">注意<\/span> 本站发布的文章及教程仅限用于学习和研究目的.请勿用于商业或违法用途，否则后果请用户自负。 本站所有资源不带技术支持，下载资源请24小时内删除，如用于违法用途，或者商业用途，一律使用者承担，本站不承担任何责任！<br />\n 本站资源多为网络收集，如涉及版权问题请及时与站长联系邮箱：2972876172@qq.com，我们会在第一时间内删除资源。<br/>\n    <\/fieldset>');
+      ThemeConfig['logo_radius'] = handleValue('4px');
+      ThemeConfig['email'] = handleValue('2972876172@qq.com');
+      ThemeConfig['banner_specify_keyword'] = handleValue('');
+      ThemeConfig['enabel_category_celcius'] = handleValue('true');
+      ThemeConfig['live2d_canTurnToHomePage'] = handleValue('true');
+      ThemeConfig['tag_cloud_max'] = handleValue('15');
+      ThemeConfig['enable_active_shadow'] = handleValue('false');
+      ThemeConfig['post_img_align'] = handleValue('center');
+      ThemeConfig['categories_title'] = handleValue('全部分类');
+      ThemeConfig['live2d_takagiDraggable'] = handleValue('unlimited');
+      ThemeConfig['comment_author_poptext'] = handleValue('输入QQ号将自动拉取昵称和头像');
+      ThemeConfig['categories_sort'] = handleValue('createTime');
+      ThemeConfig['police'] = handleValue('');
+      ThemeConfig['live2d_showHitokoto'] = handleValue('false');
+      ThemeConfig['background_light_mode'] = handleValue('');
+      ThemeConfig['loading_bar_height'] = handleValue('3px');
+      ThemeConfig['enable_comment'] = handleValue('true');
+      ThemeConfig['tag_cloud_type'] = handleValue('list');
+      ThemeConfig['scrollbar_width'] = handleValue('8px');
+      ThemeConfig['enable_copy'] = handleValue('true');
+      ThemeConfig['journal_list_effect_class'] = handleValue('fadeInUp');
+      ThemeConfig['live2d_showCopyMessage'] = handleValue('true');
+      ThemeConfig['enable_code_expander'] = handleValue('true');
+      ThemeConfig['banner_lazyload_img'] = handleValue('/source/img/lazyload_h.gif');
+      ThemeConfig['enable_index_list_ajax'] = handleValue('true');
+      ThemeConfig['enable_title_shadow'] = handleValue('true');
+      ThemeConfig['enable_navbar_icon'] = handleValue('true');
+      ThemeConfig['author_bg'] = handleValue('/source/img/author_bg.jpg');
+      ThemeConfig['enable_post_thumbnail'] = handleValue('true');
+      ThemeConfig['banner_data'] = handleValue('欢迎使用Joe2.0主题-|||-这是一款功能齐全的Halo博客主题，感谢大家的支持🙏-|||-');
+      ThemeConfig['enable_copy_right_text'] = handleValue('false');
+      ThemeConfig['max_pager_number'] = handleValue('5');
+      ThemeConfig['passage_tips_content'] = handleValue('');
+      ThemeConfig['offscreen_title_leave'] = handleValue('歪，你去哪里了？');
+      ThemeConfig['icp'] = handleValue('');
+      ThemeConfig['enable_footer'] = handleValue('true');
+      ThemeConfig['show_newreply'] = handleValue('true');
+      ThemeConfig['show_tools_when_hover'] = handleValue('true');
+      ThemeConfig['archives_list_type'] = handleValue('timeline');
+      ThemeConfig['enable_birthday'] = handleValue('true');
+      ThemeConfig['enable_single_code_select'] = handleValue('false');
+      ThemeConfig['qrcode_title'] = handleValue('我的二维码');
+      ThemeConfig['cursor_skin'] = handleValue('simple_cursor');
+      ThemeConfig['enable_music_player'] = handleValue('true');
+      ThemeConfig['enable_indent'] = handleValue('false');
+      ThemeConfig['live2d_canSwitchHitokoto'] = handleValue('true');
+      ThemeConfig['enable_share_qq'] = handleValue('true');
+      ThemeConfig['enable_code_hr'] = handleValue('true');
+      ThemeConfig['live2d_canTurnToAboutPage'] = handleValue('true');
+      ThemeConfig['aside_ad_cover'] = handleValue('');
+      ThemeConfig['live2d_style'] = handleValue('');
+      ThemeConfig['enable_share_weibo'] = handleValue('true');
+      ThemeConfig['live2d_takagiToolFont'] = handleValue('14px');
+      ThemeConfig['default_avatar'] = handleValue('/source/img/default_avatar.jpg');
+      ThemeConfig['footer_source'] = handleValue('both');
+      ThemeConfig['live2d_canSwitchModel'] = handleValue('true');
+      ThemeConfig['enable_social'] = handleValue('true');
+      ThemeConfig['photos_empty_text'] = handleValue('暂无图片数据');
+      ThemeConfig['home_empty_text'] = handleValue('暂无文章数据');
+      ThemeConfig['offscreen_title_back'] = handleValue('(つェ⊂)咦，又回来了!');
+      ThemeConfig['photos_gap'] = handleValue('10');
+      ThemeConfig['post_thumbnail'] = handleValue('https://picsum.photos/id/1081/350/200');
+      ThemeConfig['post_ad_cover_top'] = handleValue('');
+      ThemeConfig['driven_by'] = handleValue('none');
+      ThemeConfig['enable_background_dark'] = handleValue('false');
+      ThemeConfig['enable_banner'] = handleValue('true');
+      ThemeConfig['theme_mode'] = handleValue('user');
+      ThemeConfig['qq_group_text'] = handleValue('欢迎加入QQ交流群');
+      ThemeConfig['enable_loading_bar'] = handleValue('true');
+      ThemeConfig['journal_block_height'] = handleValue('300');
+      ThemeConfig['enable_page_meta'] = handleValue('true');
+      ThemeConfig['enable_categories_aside'] = handleValue('true');
+      ThemeConfig['comment_avatar_loading'] = handleValue('/source/svg/spinner-preloader.svg');
+      ThemeConfig['enable_show_in_up'] = handleValue('true');
+      ThemeConfig['enable_tags_post_num'] = handleValue('true');
+      ThemeConfig['categories_type'] = handleValue('card');
+      ThemeConfig['live2d_screenshotCaptureName'] = handleValue('live2d.png');
+      ThemeConfig['scrollbar_color'] = handleValue('');
+      ThemeConfig['live2d_canTakeScreenshot'] = handleValue('true');
+      ThemeConfig['logo_link'] = handleValue('https://yejiaoti.github.io');
+      ThemeConfig['access_key'] = handleValue('joe2.0');
+      ThemeConfig['enable_like_journal'] = handleValue('true');
+      ThemeConfig['enable_post_aside'] = handleValue('true');
+      ThemeConfig['newest_page_size'] = handleValue('5');
+      ThemeConfig['gravatar_source'] = handleValue('https://sdn.geekzu.org/avatar');
+      ThemeConfig['post_ad_cover_bottom'] = handleValue('');
+      ThemeConfig['enable_mobile_social'] = handleValue('true');
+      ThemeConfig['archives_empty_text'] = handleValue('暂无文章数据');
+      ThemeConfig['enable_police'] = handleValue('true');
+      ThemeConfig['enable_icp'] = handleValue('true');
+      ThemeConfig['copy_right_text'] = handleValue('');
+      ThemeConfig['enable_index_list_effect'] = handleValue('true');
+      ThemeConfig['enable_search'] = handleValue('true');
+      ThemeConfig['archives_title'] = handleValue('网址导航');
+      ThemeConfig['enable_weather'] = handleValue('true');
+      ThemeConfig['background_dark_mode'] = handleValue('');
+      ThemeConfig['enable_share_weixin'] = handleValue('true');
+      ThemeConfig['banner_source'] = handleValue('latest');
+      ThemeConfig['photos_title'] = handleValue('我的图库');
+      ThemeConfig['live2d_takagiEdgeSide'] = handleValue('left:0');
+      ThemeConfig['show_logo'] = handleValue('true');
+      ThemeConfig['enable_archives_aside'] = handleValue('false');
+      ThemeConfig['cdn_type'] = handleValue('none');
+      ThemeConfig['hot_category_source'] = handleValue('hot');
+      ThemeConfig['enable_comment_ua'] = handleValue('true');
+      ThemeConfig['index_list_effect_class'] = handleValue('fadeInUp');
+      ThemeConfig['banner_effect'] = handleValue('slide');
+      ThemeConfig['live2d_modelAPI'] = handleValue('\//live2d.fghrsh.net/api/');
+      ThemeConfig['fallback_thumbnail'] = handleValue('/source/img/default_thumbnail.png');
+      ThemeConfig['live2d_modelRandMode'] = handleValue('rand');
+      ThemeConfig['journals_title'] = handleValue('我的动态');
+      ThemeConfig['live2d_takagiTipsSize'] = handleValue('250x70');
+      ThemeConfig['enable_photos_aside'] = handleValue('true');
+      ThemeConfig['enable_back2top_smooth'] = handleValue('true');
+      ThemeConfig['post_aside_ad_link_top'] = handleValue('');
+      ThemeConfig['motto'] = handleValue('有钱终成眷属，没钱亲眼目睹');
+      ThemeConfig['music_id'] = handleValue('3778678');
+      ThemeConfig['enable_banner_switch_button'] = handleValue('true');
+      ThemeConfig['enable_back2top'] = handleValue('true');
+      ThemeConfig['content_max_width'] = handleValue('1320px');
+      ThemeConfig['aside_ad_link'] = handleValue('');
+      ThemeConfig['enable_links_aside'] = handleValue('true');
+      ThemeConfig['live2d_modelStorage'] = handleValue('false');
+      ThemeConfig['photos_page_size'] = handleValue('10');
+      ThemeConfig['enable_post_ads_top'] = handleValue('false');
+      ThemeConfig['live2d_modelTexturesId'] = handleValue('1');
+      ThemeConfig['custome_cloud'] = handleValue('');
+      ThemeConfig['enable_rss'] = handleValue('true');
+      ThemeConfig['live2d_takagiDraggableRevert'] = handleValue('false');
+      ThemeConfig['enable_background_light'] = handleValue('false');
+      ThemeConfig['enable_photos_effect'] = handleValue('true');
+      ThemeConfig['enable_donate'] = handleValue('false');
+      ThemeConfig['show_loaded_time'] = handleValue('false');
+      ThemeConfig['enable_strips'] = handleValue('true');
+      ThemeConfig['live2d_takagiFontSize'] = handleValue('12px');
+      ThemeConfig['live2d_aboutPageUrl'] = handleValue('');
+      ThemeConfig['enable_passage_tips'] = handleValue('true');
+      ThemeConfig['journals_empty_text'] = handleValue('暂无日志数据');
+      ThemeConfig['enable_clean_mode'] = handleValue('false');
+      ThemeConfig['enable_busuanzi'] = handleValue('true');
+      ThemeConfig['links_title'] = handleValue('友情链接');
+      ThemeConfig['enable_comment_journal'] = handleValue('true');
+      ThemeConfig['enable_fold_long_code'] = handleValue('false');
+      ThemeConfig['show_level'] = handleValue('true');
+      ThemeConfig['live2d_showF12OpenMsg'] = handleValue('false');
+      ThemeConfig['live2d_modelId'] = handleValue('1');
+      ThemeConfig['enable_powerby'] = handleValue('false');
+      ThemeConfig['toc_depth'] = handleValue('0');
+      ThemeConfig['banner_delay'] = handleValue('3500');
+      ThemeConfig['enable_journal_effect'] = handleValue('true');
+      ThemeConfig['link_behavior'] = handleValue('default');
+      ThemeConfig['enable_journal_add'] = handleValue('true');
+      ThemeConfig['code_theme'] = handleValue('one-dark');
+      ThemeConfig['live2d_canSwitchTextures'] = handleValue('true');
+      ThemeConfig['web_font'] = handleValue('joe_slate.woff2');
+      ThemeConfig['enable_banner_pagination'] = handleValue('true');
+      ThemeConfig['mode_color_dark'] = handleValue('#9999ff');
+      ThemeConfig['enable_icon_animate'] = handleValue('true');
+      ThemeConfig['footer_position'] = handleValue('none');
+      ThemeConfig['baidu_token'] = handleValue('');
+      ThemeConfig['enable_random_img_api'] = handleValue('false');
+      ThemeConfig['enable_categories_post_num'] = handleValue('true');
+      ThemeConfig['mode_color_light'] = handleValue('#fb6c28');
+      ThemeConfig['enable_code_newline'] = handleValue('false');
+      ThemeConfig['enable_debug'] = handleValue('false');
+      ThemeConfig['show_blogger'] = handleValue('true');
+      ThemeConfig['enable_sitemap'] = handleValue('true');
+      ThemeConfig['enable_offscreen_tip'] = handleValue('true');
+      ThemeConfig['enable_lifetime'] = handleValue('true');
+      ThemeConfig['relate_post_max'] = handleValue('5');
+      ThemeConfig['enable_fixed_header'] = handleValue('true');
+      ThemeConfig['overview_type'] = handleValue('C');
+      ThemeConfig['enable_archives_category'] = handleValue('true');
+      ThemeConfig['cursor_effect'] = handleValue('off');
+      ThemeConfig['tags_sort'] = handleValue('createTime');
+      ThemeConfig['enable_live2d'] = handleValue('false');
+      ThemeConfig['comment_avatar_error'] = handleValue('/source/img/error_avatar.jpg');
+      ThemeConfig['links_logo_default'] = handleValue('/1.png');
+      ThemeConfig['enable_aside'] = handleValue('true');
+      ThemeConfig['qq_group'] = handleValue('');
+      ThemeConfig['post_aside_ad_link_bottom'] = handleValue('');
+      ThemeConfig['progress_bar_bgc'] = handleValue('');
+      ThemeConfig['enable_share_qzone'] = handleValue('true');
+      ThemeConfig['qrcode_zfb'] = handleValue('');
+      ThemeConfig['enable_progress_bar'] = handleValue('true');
+      ThemeConfig['qrcode_wx'] = handleValue('');
+      ThemeConfig['enable_full_header'] = handleValue('false');
+      ThemeConfig['links_type'] = handleValue('list');
+      ThemeConfig['enable_banner_title'] = handleValue('true');
+      ThemeConfig['enable_day_words'] = handleValue('true');
+      ThemeConfig['enable_journals_aside'] = handleValue('true');
+      ThemeConfig['enable_tag_cloud'] = handleValue('true');
+      ThemeConfig['enable_code_macdot'] = handleValue('true');
+      ThemeConfig['live2d_hitokotoAPI'] = handleValue('hitokoto.cn');
+      ThemeConfig['random_img_api'] = handleValue('https://bing.ioliu.cn/v1/rand?w=400&h=300');
+      ThemeConfig['avatar_widget'] = handleValue('wing');
+      ThemeConfig['live2d_showF12Message'] = handleValue('false');
+      ThemeConfig['avatar_type'] = handleValue('circle');
+      ThemeConfig['enable_console_theme'] = handleValue('false');
+      ThemeConfig['enable_full_footer'] = handleValue('false');
+      ThemeConfig['banner_speed'] = handleValue('500');
+      ThemeConfig['enable_banner_autoplay'] = handleValue('true');
+      ThemeConfig['archives_timeline_metric'] = handleValue('month');
+      ThemeConfig['favicon'] = handleValue('');
+      ThemeConfig['enable_notice'] = handleValue('true');
+      ThemeConfig['lazyload_thumbnail'] = handleValue('/source/img/lazyload.gif');
+      ThemeConfig['tag_cloud_width'] = handleValue('static');
+      ThemeConfig['enable_qrcode'] = handleValue('false');
+      ThemeConfig['enable_share'] = handleValue('true');
+      ThemeConfig['check_baidu_collect'] = handleValue('true');
+      ThemeConfig['enable_code_copy'] = handleValue('true');
+      ThemeConfig['enable_mobile_toc'] = handleValue('false');
+      ThemeConfig['enable_share_link'] = handleValue('true');
+      ThemeConfig['newreply_page_size'] = handleValue('5');
+      ThemeConfig['live2d_takagiSize'] = handleValue('280x250');
+      ThemeConfig['links_omit'] = handleValue('');
+      ThemeConfig['enable_sheet_aside'] = handleValue('false');
+  ThemeConfig['name'] = 'joe2.0';
+  ThemeConfig['version'] = '1.0.9';
+  ThemeConfig['mode'] = 'production';
+  ThemeConfig['birthday'] = '2022/8/25 00:00:00';
+  ThemeConfig['blog_title'] = '日夜交替博客';
+  ThemeConfig['blog_url'] = 'https://yejiaoti.github.io';
+  ThemeConfig['developer'] = 'M酷';
+  ThemeConfig['theme_path'] = '';
+  ThemeConfig['BASE_URL'] = '';
+  ThemeConfig['BASE_RES_URL'] = '';
+  ThemeConfig['LAZY_IMG'] = '/source/img/lazyload.gif';
+  ThemeConfig['post_index_page_size'] = '10';
+  ThemeConfig['post_index_sort'] = 'createTime';
+  ThemeConfig['gravatar_source_url'] = '//gravatar.webp.se/avatar/';
+  ThemeConfig['gravatar_type'] = '';
+</script>
+
+<script id="metas-getter" type="text/javascript">
+  // 获取当前页面元数据，这里不要做解析
+  window.PageAttrs = {
+    "metas": {
+    }
+  };
+</script>
+
+<script id="theme-config-getter" type="text/javascript">
+  if (ThemeConfig.mode === "development") {
+    console.log("Joe2.0主题配置：", ThemeConfig);
+    console.log("资源根路径：", ThemeConfig.BASE_RES_URL);
+  }
+  // 读取主题模式
+  var initThemeMode = function() {
+    try {
+      var curMode = ""; 
+      if (ThemeConfig.theme_mode === "auto") {
+        var light_scope = ThemeConfig.light_time_scope.split("~");
+        var now = new Date();
+        var today = now.toLocaleString().split(" ")[0];
+        var curMode = now >= new Date(today + " " + light_scope[0]) && now <= new Date(today + " " + light_scope[1]) ? "light" : "dark";
+        localStorage.removeItem("data-mode");
+      } else if (ThemeConfig.theme_mode === "user") {
+        // 用户模式下优先从本地取主题模式，默认为浅色
+        curMode = localStorage.getItem("data-mode") || "light";
+        localStorage.setItem("data-mode", curMode);
+      } else {
+        // 非用户模式下直接取后台配置的模式
+        curMode = ThemeConfig.theme_mode;
+        localStorage.removeItem("data-mode");
+      }
+      document.querySelector("html").setAttribute("data-mode", curMode);
+    } catch(e) {
+      console.log(e);
+    }
+  }
+  initThemeMode();
+  window.Joe = {
+    BASE_API: "",
+    isMobile: /windows phone|iphone|android/gi.test(window.navigator.userAgent),
+    errorImg: function(target, src) {
+      target.setAttribute('src', src || 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='); 
+      setTimeout(function () {
+        target.setAttribute('onerror', null);
+        }, 1000)
+    }
+  }
+  ThemeConfig.enable_console_theme && console.log("%cTheme By " + ThemeConfig.developer + " | 版本 V" + ThemeConfig.version, "padding: 8px 15px;color:#fff;background: linear-gradient(270deg, #986fee, #8695e6, #68b7dd, #18d7d3);border-radius: 0 15px 0 15px;");
+</script><meta charset="utf-8">
+<meta name="renderer" content="webkit">
+ <meta name="format-detection" content="email=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+<meta name="keywords" content="日夜交替博客，网站源码，破解软件，电脑软件，经验教程，影视资源，日夜交替资源网">
+<meta name="description" content="日夜交替博客，网站源码，破解软件，电脑软件，经验教程，影视资源，日夜交替资源网">
+<meta name="author" content="日夜交替">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="site" content="https://yejiaoti.github.io">
+<!-- OG -->
+<meta property="og:image" content="">
+<meta property="og:description" content="日夜交替博客，网站源码，破解软件，电脑软件，经验教程，影视资源，日夜交替资源网">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="日夜交替博客">
+<meta property="og:url" content="https://yejiaoti.github.io">
+<meta property="og:title" content="网址导航 – 日夜交替博客">
+<meta property="twitter:partner" content="ogwp">
+<!-- /OG -->  <link rel="shortcut icon" size="32x32" href="">
+  <link rel="canonical" href="https://yejiaoti.github.io">
+  <link rel="apple-touch-icon" sizes="180x180" href="">
+<style type="text/css">
+  @font-face {
+    font-family: "Joe Font";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+      src: url(/source/font/joe_slate.woff2) format("woff2");
+  }
+  html body {
+    --theme: #fb6c28;
+    --scroll-bar: #c0c4cc;
+    --loading-bar: var(--theme);
+    --img-max-width: 100%;
+    font-family: "Joe Font", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, "sans-serif";
+    --res-url: '';
+  }
+  html[data-mode='dark'] body {
+    --theme: #9999ff;
+    --scroll-bar: #666;
+    --loading-bar: var(--theme);
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar);
+  }
+    html[data-mode="light"] body {
+      background-image: none;
+    }
+    html[data-mode="dark"] body {
+      background-image: none;
+    }
+</style>      <!-- 加载条 -->
+      <link rel="stylesheet" href="/source/lib/nprogress.min.css">
+      <style>
+          #nprogress .bar {
+            height: 3px;
+            background: var(--loading-bar);
+          }
+          #nprogress .peg {
+            display: none;
+          }
+      </style>
+      <script src="/source/lib/nprogress.min.js"></script>
+  <link rel="preload stylesheet" as="style" href="/source/css/min/normalize.min.css?v=1.0.9"> 
+  <link rel="preload stylesheet" as="style" href="/source/lib/font-awesome.min.css?v=1.0.9"> 
+  <link rel="preload stylesheet" as="style" href="//at.alicdn.com/t/font_2788564_crkap1ed9j5.css">
+  <link rel="preload stylesheet" as="style" href="/source/css/min/theme.min.css?v=1.0.9">
+  <style>
+    #Joe .joe_container {
+      max-width: 1320px;
+    }
+  </style>
+  <link rel="stylesheet" href="/source/lib/qmsg.css">
+  <link rel="preload stylesheet" as="style" href="/source/lib/animate.min.css">
+  <link rel="preload stylesheet" as="style" href="/source/css/min/global.min.css?v=1.0.9">
+    <link rel="preload stylesheet" as="style" href="/source/css/min/archives.min.css?v=1.0.9">
+  <link rel="preload stylesheet" as="style" href="/source/css/min/responsive.min.css?v=1.0.9">
+  <link rel="stylesheet" href="/source/lib/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/source/css/min/simple_cursor.min.css?v=1.0.9">
+    <script src="/source/lib/jquery.min.js"></script>
+    <meta name="generator" content="Halo 1.5.2"/>
+    
+  </head>
+  <body>
+    <div id="Joe">
+<header class="joe_header">
+  <div class="joe_header__above topInDown fixed glass">
+    <div class="joe_container joe_header_container">
+      <i class="joe-font joe-icon-caidan joe_header__above-slideicon"></i>
+        <a title="日夜交替博客" class="joe_header__above-logo" href="https://yejiaoti.github.io">
+          <img style="border-radius:4px" src="/1.png" onerror="Joe.errorImg(this)" alt="日夜交替博客">
+        </a>
+      <nav class="joe_header__above-nav active-animate">
+                <a class="item" href="/" target="_self" title="首页">首页</a>
+                <a class="item" href="/news" target="_self" title="学习记录">学习记录</a>
+
+      </nav>
+
+    </div>
+  </div>
+
+
+ 
+  <div class="joe_header__toc">
+    <div class="joe_header__toc-wrap">
+      <div class="toc_top">
+        <h3>网址导航<span>CONTENT</span></h3>      
+        <img width="100%" height="150" src="/source/img/context_bg.png" onerror="Joe.errorImg(this)" alt="网址导航" />
+      </div>
+      <div id="js-toc-mobile" class="toc"></div>
+    </div>
+  </div>
+
+  <div class="joe_header__mask"></div>
+</header>      <div class="joe_container joe_main_container page-archives animated showInUp">
+        <div class="joe_main">
+          <div class="joe_index joe_archives__filing">
+            <div class="title">学习记录</div>
+            <div class="content">
+
+              <div class="joe_archives__wrapper animated fadeIn">
+                <div class="joe_archives-title">
+                    <i class="joe-font joe-icon-timeline"></i>学习记录
+                </div>
+                  <ul class="joe_archives-timelist">
+
+                    
+                        <li class="item">
+                          <div class="wrapper">
+                            <div class="panel in">2022-08-26<i class="joe-font joe-icon-arrow-down"></i></div>
+                            <ol class="panel-body">
+
+                                <li>
+                                  <a rel="noopener noreferrer" >今日修改年份获取，每日一诗，新的学习记录网页。 用静态网页写日记真麻烦。  年份获取引用：https://www.qilucms.com/xueyuan/jiaocheng/355.html 。 期待修改记录折叠，点开后查看，正好与导航相反，不知道怎么设置。 
+                                  主题大佬别生气，我改的乱七八糟，因为只会删减，还不知道哪行数据是干什么的。</a>
+                                </li>
+
+
+                            </ol>
+                          </div>
+                        </li>
+
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="joe_action">
+      <div class="joe_action_item mode">
+        <svg class="mode-light" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+          <path d="M234.24 512a277.76 277.76 0 1 0 555.52 0 277.76 277.76 0 1 0-555.52 0zM512 187.733a42.667 42.667 0 0 1-42.667-42.666v-102.4a42.667 42.667 0 0 1 85.334 0v102.826A42.667 42.667 0 0 1 512 187.733zm-258.987 107.52a42.667 42.667 0 0 1-29.866-12.373l-72.96-73.387a42.667 42.667 0 0 1 59.306-59.306l73.387 72.96a42.667 42.667 0 0 1 0 59.733 42.667 42.667 0 0 1-29.867 12.373zm-107.52 259.414H42.667a42.667 42.667 0 0 1 0-85.334h102.826a42.667 42.667 0 0 1 0 85.334zm34.134 331.946a42.667 42.667 0 0 1-29.44-72.106l72.96-73.387a42.667 42.667 0 0 1 59.733 59.733l-73.387 73.387a42.667 42.667 0 0 1-29.866 12.373zM512 1024a42.667 42.667 0 0 1-42.667-42.667V878.507a42.667 42.667 0 0 1 85.334 0v102.826A42.667 42.667 0 0 1 512 1024zm332.373-137.387a42.667 42.667 0 0 1-29.866-12.373l-73.387-73.387a42.667 42.667 0 0 1 0-59.733 42.667 42.667 0 0 1 59.733 0l72.96 73.387a42.667 42.667 0 0 1-29.44 72.106zm136.96-331.946H878.507a42.667 42.667 0 1 1 0-85.334h102.826a42.667 42.667 0 0 1 0 85.334zM770.987 295.253a42.667 42.667 0 0 1-29.867-12.373 42.667 42.667 0 0 1 0-59.733l73.387-72.96a42.667 42.667 0 1 1 59.306 59.306l-72.96 73.387a42.667 42.667 0 0 1-29.866 12.373z" />
+        </svg>
+        <svg class="mode-dark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+          <path d="M587.264 104.96c33.28 57.856 52.224 124.928 52.224 196.608 0 218.112-176.128 394.752-393.728 394.752-29.696 0-58.368-3.584-86.528-9.728C223.744 832.512 369.152 934.4 538.624 934.4c229.376 0 414.72-186.368 414.72-416.256 1.024-212.992-159.744-389.12-366.08-413.184z" />
+          <path d="M340.48 567.808l-23.552-70.144-70.144-23.552 70.144-23.552 23.552-70.144 23.552 70.144 70.144 23.552-70.144 23.552-23.552 70.144zM168.96 361.472l-30.208-91.136-91.648-30.208 91.136-30.208 30.72-91.648 30.208 91.136 91.136 30.208-91.136 30.208-30.208 91.648z" />
+        </svg>
+      </div>
+      <div class="joe_action_item back2top">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+          <path d="M725.902 498.916c18.205-251.45-93.298-410.738-205.369-475.592l-6.257-3.982-6.258 3.414c-111.502 64.853-224.711 224.142-204.8 475.59-55.751 53.476-80.214 116.623-80.214 204.8v15.36l179.2-35.27c11.378 40.39 58.596 69.973 113.21 69.973 54.613 0 101.262-29.582 112.64-68.836l180.337 36.41v-15.36c-.569-89.885-25.031-153.6-82.489-206.507zM571.733 392.533c-33.564 31.29-87.04 28.445-118.329-5.12s-28.444-87.04 5.12-117.76c33.565-31.289 87.04-28.444 118.33 5.12s28.444 86.471-5.12 117.76zm-56.32 368.64c-35.84 0-64.284 29.014-64.284 64.285 0 35.84 54.044 182.613 64.284 182.613s64.285-146.773 64.285-182.613c0-35.271-29.014-64.285-64.285-64.285z" />
+        </svg>
+      </div>
+  </div>
+  <footer class="joe_footer">
+      <div class="joe_container">
+        <div class="item">
+          <p>
+            <script type="text/javascript">document.write((new Date()).getFullYear());</script> ©<a href="https://yejiaoti.github.io" target="_blank" rel="noopener noreferrer">日夜交替</a>
+            
+          </p>
+          
+            <div class="site_life">
+              <i class="joe-font joe-icon-jiasu"></i>已运行&nbsp;<strong class="joe_run__day">00</strong> 天 <strong class="joe_run__hour">00</strong> 时 <strong class="joe_run__minute">00</strong> 分 <strong class="joe_run__second">00</strong> 秒
+            </div>
+        </div>
+        <div class="side-col">
+          <div class="item">
+            <a class="rss" href="https://yejiaoti.github.io/rss.xml" target="_blank" rel="noopener noreferrer"><i class="joe-font joe-icon-rss-fill"></i>&nbsp;RSS</a>
+            Theme by<a class="a-theme" title="当前主题：Joe2.0 V1.0.10" href="https://github.com/qinhua/halo-theme-joe2.0" target="_blank" rel="noopener noreferrer">M酷</a>
+          </div>
+          <div class="item busuanzi-statistic">
+            <span class="site-pv"><i class="joe-font joe-icon-zhexiantu"></i>访问量<em id="busuanzi_value_site_pv">0</em></span>
+            <span class="site-uv"><i class="joe-font joe-icon-monitor"></i>访客量<em id="busuanzi_value_site_uv">0</em></span>
+            <span class="site-page-pv"><i class="joe-font joe-icon-dianji"></i>本页访客<em id="busuanzi_value_page_pv">0</em></span>
+          </div>
+      </div>
+      </div>
+    
+    
+  </footer>
+    </div>
+  <script src="/source/lib/lazysizes.min.js"></script>
+  <script src="/source/lib/qmsg.js"></script>
+    <script src="/source/lib/marked.min.js"></script>
+  <script src="/source/js/min/utils.min.js?v=1.0.9"></script>
+  <script src="/source/lib/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="/source/lib/APlayer.min.css"> 
+    <script src="/source/lib/APlayer.min.js"></script>
+    <script src="/source/lib/meting.min.js"></script>
+  <script src="/source/js/min/custom.min.js?v=1.0.9"></script>
+
+  <script src="/source/js/min/common.min.js?v=1.0.9"></script>
+    <script src="/source/js/min/archives.min.js?v=1.0.9"></script>
+    <!-- 卜算子 -->
+    <script src="/source/lib/busuanzi.min.js"></script>
+
+    
+  </body>
+</html>
