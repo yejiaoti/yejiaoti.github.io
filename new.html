@@ -495,6 +495,26 @@
                   <ul class="joe_archives-timelist">
 
                     
+                     <li class="item">
+                          <div class="wrapper">
+                            <div class="panel in">2022-08-31<i class="joe-font joe-icon-arrow-down"></i></div>
+                            <ol class="panel-body">
+                                <li>
+                                  <a rel="noopener noreferrer" >昨日添加404页面。<br>
+                                      今日记录EXCEL小写金额转为大写金额。<br>
+                                      \```=IF(F16="","",IF(ROUND(F16,2)=0,"零",IF(ROUND(F16,2)<0,"负","")<br>
+                                       &IF(ROUND(ABS(F16),2)<1,"",TEXT(INT(ROUND(ABS(F16),2)),"[dbnum2]")&"圆")<br>
+                                      &IF(INT(ROUND(ABS(F16),2)*10)-INT(ROUND(ABS(F16),2))*10=0,<br>
+                                      IF(INT(ROUND(ABS(F16),2)*100)-INT(ROUND(ABS(F16),2)*10)*10=0,"","零"),<br>
+                                      TEXT(INT(ROUND(ABS(F16),2)*10)-INT(ROUND(ABS(F16),2))*10,"[dbnum2]")&"角")<br>
+                                      &IF((INT(ROUND(ABS(F16),2)*100)-INT(ROUND(ABS(F16),2)*10)*10)=0,"整",<br>
+                                      TEXT((INT(ROUND(ABS(F16),2)*100)-INT(ROUND(ABS(F16),2)*10)*10),"[dbnum2]")&"分")))\```。<br>
+                                    </a>
+                                </li>
+                                 </ol>
+                          </div>
+                        </li>
+                      
                       <li class="item">
                           <div class="wrapper">
                             <div class="panel in">2022-08-29<i class="joe-font joe-icon-arrow-down"></i></div>
