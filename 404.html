@@ -8,11 +8,19 @@
 
     <link rel="stylesheet" type="text/css" href="img/style.css">
 	<script type="text/javascript" src="img/time.js"></script>
+<!--樱花飘落特效-->
 	<script>
 function loadJs(path,callback){var header=document.getElementsByTagName("head")[0];var script=document.createElement('script');script.setAttribute('src',path);header.appendChild(script);if(!/*@cc_on!@*/false){script.onload=function(){callback();}}else{script.onreadystatechange=function(){if(script.readystate=="loaded" ||script.readState=='complate'){callback();}}}}
-        loadJs("https://vkceyugu.cdn.bspapp.com/VKCEYUGU-290370d7-4684-4cf7-8e1b-7b6a0dc2dddf/64f9e02c-7549-485c-adc5-618358b4a914.js",function(){yinghua(50,1.0)});
+        loadJs("img/yinghua.js",function(){yinghua(50,1.0)});
 //200是樱花数量，2.0是樱花大小
 </script>
+<!--点击星星特效-->
+<script>
+        var hm = document.createElement("script");
+        hm.src = "img/xingxing.js";
+        var s = document.getElementsByTagName("title")[0]; 
+        s.parentNode.insertBefore(hm, s);
+</script>	
 </head>
 <body>
     <div class="content">
