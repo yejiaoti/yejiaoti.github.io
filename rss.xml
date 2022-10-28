@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+            <title>网址导航 - 日夜交替</title>
+            <link>https://yejiaoti.github.io/</link>
+        <generator>Halo 1.5.2</generator>
+        <lastBuildDate>Tue, 19 Apr 2022 11:50:52 CST</lastBuildDate>
+                <item>
+                    <title>
+                        <![CDATA[首页]]>
+                    </title>
+                    <link>https://yejiaoti.github.io/index.html</link>
+                    <description>
+                            <![CDATA[<h3 id="首页" tabindex="-1">首页</h3><a href="https://yejiaoti.github.io/index.html" target="_blank">https://yejiaoti.github.io/index.html</a></p>]]>
+                    </description>
+                    <pubDate>Tue, 19 Apr 2022 11:50:07 CST</pubDate>
+                </item>
+				<item>
+                    <title>
+                        <![CDATA[学习记录]]>
+                    </title>
+                    <link>https://yejiaoti.github.io/new.html</link>
+                    <description>
+                            <![CDATA[<h3 id="学习记录" tabindex="-1">学习记录</h3><a href="https://yejiaoti.github.io/new.html" target="_blank">https://yejiaoti.github.io/new.html</a></p>]]>
+                    </description>
+                    <pubDate>Tue, 19 Apr 2022 11:50:07 CST</pubDate>
+                </item>
+    </channel>
+</rss>
