@@ -5,6 +5,7 @@
             <link>https://yejiaoti.github.io/</link>
         <generator>Halo 1.5.2</generator>
         <lastBuildDate>Tue, 19 Apr 2022 11:50:52 CST</lastBuildDate>
+	    
                 <item>
                     <title>
                         <![CDATA[首页]]>
@@ -15,13 +16,26 @@
                     </description>
                     <pubDate>Tue, 19 Apr 2022 11:50:07 CST</pubDate>
                 </item>
-				<item>
+	    
+		<item>
                     <title>
                         <![CDATA[学习记录]]>
                     </title>
                     <link>https://yejiaoti.github.io/new.html</link>
                     <description>
                             <![CDATA[<h3 id="学习记录" tabindex="-1">学习记录</h3><a href="https://yejiaoti.github.io/new.html" target="_blank">https://yejiaoti.github.io/new.html</a></p>]]>
+                    </description>
+                    <pubDate>Tue, 19 Apr 2022 11:50:07 CST</pubDate>
+                </item>
+
+	    
+		<item>
+                    <title>
+                        <![CDATA[样式指南]]>
+                    </title>
+                    <link>https://yejiaoti.github.io/joe.html</link>
+                    <description>
+                            <![CDATA[<h3 id="样式指南" tabindex="-1">样式指南</h3><a href="https://yejiaoti.github.io/joe.html" target="_blank">https://yejiaoti.github.io/joe.html</a></p>]]>
                     </description>
                     <pubDate>Tue, 19 Apr 2022 11:50:07 CST</pubDate>
                 </item>
