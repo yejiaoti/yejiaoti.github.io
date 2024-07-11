@@ -7,7 +7,7 @@
 				countTime += 1;
 				if(countTime % 10 == 7){
 					countImg += 1;
-					bg1Container.style = `background-image: url(https://www.dmoe.cc/random.php&${countImg})`;
+					bg1Container.style = `background-image: url(https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=为美好世界献上祝福&${countImg})`;
 				}else if((countTime + 5) % 10 == 7){
 					countImg += 1;
 					bg2Container.style = `background-image: url(https://api.r10086.com/樱道随机图片api接口.php?自适应图片系列=Fate&${countImg})`;
