@@ -1,5 +1,5 @@
 			countImg = 1;
-			countTime = 0;
+			countTime = 10;
 			bg1Container = document.getElementById("bg1");
 			bg2Container = document.getElementById("bg2");
 			
