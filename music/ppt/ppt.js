@@ -1,15 +1,15 @@
-			countImg = 1;
-			countTime = 10;
-			bg1Container = document.getElementById("bg1");
-			bg2Container = document.getElementById("bg2");
-			
-			setInterval(function(){
-				countTime += 1;
-				if(countTime % 10 == 7){
-					countImg += 1;
-					bg1Container.style = `background-image: url(http://yurun.ueuo.com/tu/tcimg.php?img=meinv&${countImg})`;
-				}else if((countTime + 5) % 10 == 7){
-					countImg += 1;
-					bg2Container.style = `background-image: url(http://yurun.ueuo.com/tu/tcimg.php?img=erciyuan&${countImg})`;
-				}
-			}, 1000);
+let countImg = 1;  
+let countTime = 0;  
+const bg1Container = document.getElementById("bg1");  
+const bg2Container = document.getElementById("bg2");  
+
+setInterval(function() {  
+    countTime += 1;  
+    if (countTime % 10 === 7) {  
+        countImg += 1;  
+        bg1Container.style.backgroundImage = `url(tcimg.php?img=meinv&${countImg})`;  
+    } else if ((countTime + 5) % 10 === 7) {  
+        countImg += 1;  
+        bg2Container.style.backgroundImage = `url(tcimg.php?img=erciyuan&${countImg})`;  
+    }  
+}, 1000);
