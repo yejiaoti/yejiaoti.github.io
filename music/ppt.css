@@ -27,7 +27,6 @@ body {
 
 #bg2 {  
     animation-delay: 5s;  
-    background-image: url("tcimg.php?img=erciyuan");  
 }  
 
 @keyframes bg {  
